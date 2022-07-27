@@ -5,8 +5,395 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BinaryClock"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="Binary Clock" Height="480" Width="640">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="Black" Offset="0"/>
+            <GradientStop Color="#FFDD0A0A" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid Name="MainGrid">
 
+        <Rectangle x:Name="H0" HorizontalAlignment="Center" Height="35" Margin="-200,-100,0,0"
+    Stroke="#FF033805" VerticalAlignment="Center"
+    Width="38" RadiusX="50" RadiusY="50">
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="10" ShadowDepth="10"/>
+            </Rectangle.Effect>
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFFFF1B" Offset="0"/>
+                    <GradientStop Color="#FF29B413" Offset="0.568"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="H1" HorizontalAlignment="Center" Height="35" Margin="-100,-100,0,0"
+    Stroke="#FF033805" VerticalAlignment="Center"
+    Width="38" RadiusX="50" RadiusY="50">
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="10" ShadowDepth="10"/>
+            </Rectangle.Effect>
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFFFF1B" Offset="0"/>
+                    <GradientStop Color="#FF29B413" Offset="0.568"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="H2" HorizontalAlignment="Center" Height="35" Margin="0,-100,0,0"
+            Stroke="#FF033805" VerticalAlignment="Center"
+            Width="38" RadiusX="50" RadiusY="50">
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="10" ShadowDepth="10"/>
+            </Rectangle.Effect>
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFFFF1B" Offset="0"/>
+                    <GradientStop Color="#FF29B413" Offset="0.568"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="H3" HorizontalAlignment="Center" Height="35" Margin="100,-100,0,0"
+            Stroke="#FF033805" VerticalAlignment="center"
+            Width="38" RadiusX="50" RadiusY="50">
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="10" ShadowDepth="10"/>
+            </Rectangle.Effect>
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFFFF1B" Offset="0"/>
+                    <GradientStop Color="#FF29B413" Offset="0.568"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="H4" HorizontalAlignment="Center" Height="35" Margin="200,-100,0,0"
+            Stroke="#FF033805" VerticalAlignment="center"
+            Width="38" RadiusX="50" RadiusY="50">
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="10" ShadowDepth="10"/>
+            </Rectangle.Effect>
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFFFF1B" Offset="0"/>
+                    <GradientStop Color="#FF29B413" Offset="0.568"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="H5" HorizontalAlignment="Center" Height="35" Margin="300,-100,0,0"
+            Stroke="#FF033805" VerticalAlignment="center"
+            Width="38" RadiusX="50" RadiusY="50">
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="10" ShadowDepth="10"/>
+            </Rectangle.Effect>
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFFFF1B" Offset="0"/>
+                    <GradientStop Color="#FF29B413" Offset="0.568"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="M0" HorizontalAlignment="Center" Height="35" Margin="-200,0,0,0"
+            Stroke="#FF033805" VerticalAlignment="center"
+            Width="38" RadiusX="50" RadiusY="50">
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="10" ShadowDepth="10"/>
+            </Rectangle.Effect>
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFFFF1B" Offset="0"/>
+                    <GradientStop Color="#FF29B413" Offset="0.568"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="M1" HorizontalAlignment="Center" Height="35" Margin="-100,0,0,0"
+            Stroke="#FF033805" VerticalAlignment="center"
+            Width="38" RadiusX="50" RadiusY="50">
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="10" ShadowDepth="10"/>
+            </Rectangle.Effect>
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFFFF1B" Offset="0"/>
+                    <GradientStop Color="#FF29B413" Offset="0.568"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="M2" HorizontalAlignment="Center" Height="35" Margin="0,0,0,0"
+            Stroke="#FF033805" VerticalAlignment="center"
+            Width="38" RadiusX="50" RadiusY="50">
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="10" ShadowDepth="10"/>
+            </Rectangle.Effect>
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFFFF1B" Offset="0"/>
+                    <GradientStop Color="#FF29B413" Offset="0.568"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="M3" HorizontalAlignment="Center" Height="35" Margin="100,0,0,0"
+            Stroke="#FF033805" VerticalAlignment="center"
+            Width="38" RadiusX="50" RadiusY="50">
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="10" ShadowDepth="10"/>
+            </Rectangle.Effect>
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFFFF1B" Offset="0"/>
+                    <GradientStop Color="#FF29B413" Offset="0.568"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="M4" HorizontalAlignment="Center" Height="35" Margin="200,0,0,0"
+            Stroke="#FF033805" VerticalAlignment="center"
+            Width="38" RadiusX="50" RadiusY="50">
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="10" ShadowDepth="10"/>
+            </Rectangle.Effect>
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFFFF1B" Offset="0"/>
+                    <GradientStop Color="#FF29B413" Offset="0.568"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="M5" HorizontalAlignment="Center" Height="35" Margin="300,0,0,0"
+            Stroke="#FF033805" VerticalAlignment="center"
+            Width="38" RadiusX="50" RadiusY="50">
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="10" ShadowDepth="10"/>
+            </Rectangle.Effect>
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFFFF1B" Offset="0"/>
+                    <GradientStop Color="#FF29B413" Offset="0.568"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="S0" HorizontalAlignment="Center" Height="35" Margin="-200,100,0,0"
+            Stroke="#FF033805" VerticalAlignment="center"
+            Width="38" RadiusX="50" RadiusY="50">
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="10" ShadowDepth="10"/>
+            </Rectangle.Effect>
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFFFF1B" Offset="0"/>
+                    <GradientStop Color="#FF29B413" Offset="0.568"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="S1" HorizontalAlignment="Center" Height="35" Margin="-100,100,0,0"
+            Stroke="#FF033805" VerticalAlignment="center"
+            Width="38" RadiusX="50" RadiusY="50">
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="10" ShadowDepth="10"/>
+            </Rectangle.Effect>
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFFFF1B" Offset="0"/>
+                    <GradientStop Color="#FF29B413" Offset="0.568"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="S2" HorizontalAlignment="Center" Height="35" Margin="0,100,0,0"
+            Stroke="#FF033805" VerticalAlignment="center"
+            Width="38" RadiusX="50" RadiusY="50">
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="10" ShadowDepth="10"/>
+            </Rectangle.Effect>
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFFFF1B" Offset="0"/>
+                    <GradientStop Color="#FF29B413" Offset="0.568"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="S3" HorizontalAlignment="Center" Height="35" Margin="100,100,0,0"
+            Stroke="#FF033805" VerticalAlignment="center"
+            Width="38" RadiusX="50" RadiusY="50">
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="10" ShadowDepth="10"/>
+            </Rectangle.Effect>
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFFFF1B" Offset="0"/>
+                    <GradientStop Color="#FF29B413" Offset="0.568"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="S4" HorizontalAlignment="Center" Height="35" Margin="200,100,0,0"
+            Stroke="#FF033805" VerticalAlignment="center"
+            Width="38" RadiusX="50" RadiusY="50">
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="10" ShadowDepth="10"/>
+            </Rectangle.Effect>
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFFFF1B" Offset="0"/>
+                    <GradientStop Color="#FF29B413" Offset="0.568"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="S5" HorizontalAlignment="Center" Height="35" Margin="300,100,0,0"
+            Stroke="#FF033805" VerticalAlignment="center"
+            Width="38" RadiusX="50" RadiusY="50">
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="10" ShadowDepth="10"/>
+            </Rectangle.Effect>
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFFFF1B" Offset="0"/>
+                    <GradientStop Color="#FF29B413" Offset="0.568"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <TextBlock x:Name="HourLabel" Text="Hour" TextAlignment="Center" FontWeight="Bold" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="-450,-100,0,0">
+            <TextBlock.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFFFF1B" Offset="0"/>
+                    <GradientStop Color="#FF29B413" Offset="0.568"/>
+                </LinearGradientBrush>
+            </TextBlock.Foreground>
+        </TextBlock>
+        <TextBlock x:Name="MinutesLabel" Text="Minutes" TextAlignment="Center" FontWeight="Bold" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="-450,0,0,0">
+            <TextBlock.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFFFF1B" Offset="0"/>
+                    <GradientStop Color="#FF29B413" Offset="0.568"/>
+                </LinearGradientBrush>
+            </TextBlock.Foreground>
+        </TextBlock>
+        <TextBlock x:Name="SecondsLabel" Text="Seconds" TextAlignment="Center" FontWeight="Bold" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="-450,100,0,0">
+            <TextBlock.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFFFF1B" Offset="0"/>
+                    <GradientStop Color="#FF29B413" Offset="0.568"/>
+                </LinearGradientBrush>
+            </TextBlock.Foreground>
+        </TextBlock>
+
+        <TextBlock x:Name="HH" Text="00" TextAlignment="Center" FontWeight="Bold" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="-300,-100,0,0">
+            <TextBlock.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFFFF1B" Offset="0"/>
+                    <GradientStop Color="#FF29B413" Offset="0.568"/>
+                </LinearGradientBrush>
+            </TextBlock.Foreground>
+        </TextBlock>
+        <TextBlock x:Name="MM" Text="00" TextAlignment="Center" FontWeight="Bold" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="-300,0,0,0">
+            <TextBlock.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFFFF1B" Offset="0"/>
+                    <GradientStop Color="#FF29B413" Offset="0.568"/>
+                </LinearGradientBrush>
+            </TextBlock.Foreground>
+        </TextBlock>
+        <TextBlock x:Name="SS" Text="00" TextAlignment="Center" FontWeight="Bold" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="-300,100,0,0">
+            <TextBlock.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFFFF1B" Offset="0"/>
+                    <GradientStop Color="#FF29B413" Offset="0.568"/>
+                </LinearGradientBrush>
+            </TextBlock.Foreground>
+        </TextBlock>
+
+        <TextBlock Text="32" TextAlignment="Center" FontWeight="Bold" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="-200,-200,0,0">
+            <TextBlock.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFFFF1B" Offset="0"/>
+                    <GradientStop Color="#FF29B413" Offset="0.568"/>
+                </LinearGradientBrush>
+            </TextBlock.Foreground>
+        </TextBlock>
+        <TextBlock Text="16" TextAlignment="Center" FontWeight="Bold" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="-100,-200,0,0">
+            <TextBlock.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFFFF1B" Offset="0"/>
+                    <GradientStop Color="#FF29B413" Offset="0.568"/>
+                </LinearGradientBrush>
+            </TextBlock.Foreground>
+        </TextBlock>
+        <TextBlock Text="8" TextAlignment="Center" FontWeight="Bold" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,-200,0,0">
+            <TextBlock.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFFFF1B" Offset="0"/>
+                    <GradientStop Color="#FF29B413" Offset="0.568"/>
+                </LinearGradientBrush>
+            </TextBlock.Foreground>
+        </TextBlock>
+        <TextBlock Text="4" TextAlignment="Center" FontWeight="Bold" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="100,-200,0,0">
+            <TextBlock.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFFFF1B" Offset="0"/>
+                    <GradientStop Color="#FF29B413" Offset="0.568"/>
+                </LinearGradientBrush>
+            </TextBlock.Foreground>
+        </TextBlock>
+        <TextBlock Text="2" TextAlignment="Center" FontWeight="Bold" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="200,-200,0,0">
+            <TextBlock.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFFFF1B" Offset="0"/>
+                    <GradientStop Color="#FF29B413" Offset="0.568"/>
+                </LinearGradientBrush>
+            </TextBlock.Foreground>
+        </TextBlock>
+        <TextBlock Text="1" TextAlignment="Center" FontWeight="Bold" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="300,-200,0,0">
+            <TextBlock.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFFFF1B" Offset="0"/>
+                    <GradientStop Color="#FF29B413" Offset="0.568"/>
+                </LinearGradientBrush>
+            </TextBlock.Foreground>
+        </TextBlock>
+
+        <TextBlock x:Name="BinaryClockLabel" HorizontalAlignment="Center" Text="Binary Clock" VerticalAlignment="Top" Padding="0,0,0,0" Margin="0,16,0,26" FontSize="36" FontWeight="Bold">
+            <TextBlock.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFFFF1B" Offset="0"/>
+                    <GradientStop Color="#FF29B413" Offset="0.568"/>
+                </LinearGradientBrush>
+            </TextBlock.Foreground>
+        </TextBlock>
+
+        <Rectangle x:Name="RedButton" HorizontalAlignment="Center" Height="35" Margin="-100,0,0,10"
+    Stroke="#FF033805" VerticalAlignment="Bottom"
+    Width="38" RadiusX="50" RadiusY="50" MouseLeftButtonDown="RedButtonPressed">
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="10" ShadowDepth="10"/>
+            </Rectangle.Effect>
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFFFF1B" Offset="0"/>
+                    <GradientStop Color="#FFB41313" Offset="0.568"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="GreenButton" HorizontalAlignment="Center" Height="35" Margin="0,0,0,10"
+            Stroke="#FF033805" VerticalAlignment="Bottom"
+            Width="38" RadiusX="50" RadiusY="50" MouseLeftButtonDown="GreenButtonPressed">
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="10" ShadowDepth="10"/>
+            </Rectangle.Effect>
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFFFF1B" Offset="0"/>
+                    <GradientStop Color="#FF29B413" Offset="0.568"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="BlueButton" HorizontalAlignment="Center" Height="35" Margin="100,0,0,10"
+            Stroke="#FF033805" VerticalAlignment="Bottom"
+            Width="38" RadiusX="50" RadiusY="50" MouseLeftButtonDown="BlueButtonPressed">
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="10" ShadowDepth="10"/>
+            </Rectangle.Effect>
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF00F6FF" Offset="0"/>
+                    <GradientStop Color="#FF2113B4" Offset="0.568"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
     </Grid>
 </Window>
